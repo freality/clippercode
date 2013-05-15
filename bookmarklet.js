@@ -4,12 +4,12 @@
   //we must use the same protocol as the target page
   // else, BE BLOCKED.
   var dev = true;
-  var settings = {}
-    , setting.dev = dev
-    , settings.protocol = location.protocol
-    , settings.domain = dev ? 'github.com' : 'dev.tgdcom.com'
-    , settings.path = dev ? '/freality/clippercode/raw/master' : '/clipmaker'
-    , settings.url = url = protocol + '//' + domain + path;
+  var settings = {};
+  settings.dev = dev;
+  settings.protocol = location.protocol;
+  settings.domain = dev ? 'github.com' : 'dev.tgdcom.com';
+  settings.path = dev ? '/freality/clippercode/raw/master' : '/clipmaker';
+  settings.url = url = settings.protocol + '//' + settings.domain + settings.path;
   
   cs = document.createElement('LINK');
   cs.rel = 'stylesheet';

@@ -1,7 +1,7 @@
 (function($, qwery, ZeroClipboard, document, location) {
   var settings = window.ClipperSettings || {};
   var url = settings ? settings.url : "";
-  var movie_path = url + "ZeroClipboard.swf";
+  var movie_path = url + "/ZeroClipboard.swf";
   
   var clip_defaults = {
     moviePath:         movie_path,                 // URL to movie
