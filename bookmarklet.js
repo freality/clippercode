@@ -7,8 +7,8 @@
   var settings = {};
   settings.dev = dev;
   settings.protocol = location.protocol;
-  settings.domain = dev ? 'github.com' : 'dev.tgdcom.com';
-  settings.path = dev ? '/freality/clippercode/raw/master' : '/clipmaker';
+  settings.domain = dev ? 'raw.github.com' : 'dev.tgdcom.com';
+  settings.path = dev ? '/freality/clippercode/master' : '/clipmaker';
   settings.url = url = settings.protocol + '//' + settings.domain + settings.path;
   
   cs = document.createElement('LINK');
@@ -32,6 +32,8 @@
   ms.type = 'text/javascript';
   ms.src = url + '/js/main.js';
   document.getElementsByTagName('head')[0].appendChild(ms);
+  
+  //make sure we loaded
   
   window.ClipperSettings = settings;
   
